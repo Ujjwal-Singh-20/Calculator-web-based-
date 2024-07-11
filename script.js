@@ -30,3 +30,17 @@ function calculateResult() {
         }, 2000);
     }
 }
+
+function appendSymbol(symbol) {
+    if (display.innerText === '0' && symbol !== '.') {
+        display.innerText = symbol;
+    } else {
+        display.innerText += symbol;
+    }
+}
+
+function calculateSquareRoot() {
+    display.innerText = Math.sqrt(parseFloat(display.innerText));
+}
+
+
