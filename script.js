@@ -25,8 +25,12 @@ function calculateResult() {
         display.innerText = eval(display.innerText);
     } catch (error) {
         display.innerText = 'Error';
+        setTimeout(() => {
+            display.innerText = '0';
+        }, 2000);
     }
 }
+
 
 <div class="buttons">
     <button class="btn" onclick="clearDisplay()">C</button>
